@@ -143,10 +143,12 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array, flavor){
+    let i = array.indexOf(flavor);
+    array.splice(i,1);
+    return array;
 }
-
+console.log(removeFlavorByName(copy(originalFlavors), "Rocky Road"))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
